@@ -40,6 +40,10 @@ body {
   margin: 1%;
 }
 
+.color:hover {
+  cursor: pointer;
+}
+
 #settings {
   width: 100%;
   display: flex;
@@ -99,6 +103,10 @@ body {
   padding: 0.05rem;
 }
 
+#pixel-board:hover {
+  cursor: pointer;
+}
+
 .pixel-border {
   border: 8px double black;
   border-radius: 6px;
@@ -115,7 +123,6 @@ footer a:hover {
 }
 
 hr {
-  font-weight: 900;
   width: 300px;
   margin: 10px auto;
 }
