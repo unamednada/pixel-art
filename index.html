@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel Art</title>
   <link rel="stylesheet" href="public/style.css">
-  <link rel="stylesheet" href="public/pixel-borders.css">
 </head>
 <body>
   <h1 id="title">Pixel art</h1>
@@ -22,11 +21,11 @@
   </section>
   <section id="settings">
     <button id="clear-board"><img src="public/images/eraser.png" alt="pixel eraser"></button>
-    <label for="board-size">Tamanho da tela: <input type="number" id="board-size" min="1"></label>
+    <label for="board-size">pixels <input type="number" id="board-size" min="1" placeholder="10"></label>
     <button id="generate-board"><img src="public/images/tick.png" alt="pixel tick"></button>
   </section>
-  <table id="pixel-board">
-  </table>
+  <div id="pixel-board">
+  </div>
   <script src="public/script.js"></script>
 </body>
 </html>
