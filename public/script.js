@@ -1,5 +1,5 @@
 const colorArray = Array.from(document.querySelector('#color-palette').children);
-console.log(colorArray);
+let mouseIsDown = false;
 
 function createColorArray() {
   const colors = [];
@@ -26,7 +26,7 @@ function setBGColors() {
 window.onload = setBGColors;
 
 const table = document.querySelector('#pixel-board');
-let n = 5;
+let n = 10;
 function createPixelBoard() {
   for (let i = 0; i < n; i += 1) {
     const row = document.createElement('tr');
@@ -58,12 +58,19 @@ colorPallete.addEventListener('click', pickColor);
 
 function paintPixel(event) {
   const pixel = event.target;
-  if (pixel.className === 'pixel') {
+  if (pixel.className === 'pixel' && mouseIsDown) {
     pixel.style.backgroundColor = document.querySelector('.selected').style.backgroundColor;
   }
 }
 
-table.addEventListener('click', paintPixel);
+table.addEventListener('mousedown', () => { mouseIsDown = true; });
+table.addEventListener('mouseup', () => { mouseIsDown = false; });
+table.addEventListener('mouseover', paintPixel);
+table.addEventListener('click', (event) => {
+  mouseIsDown = true;
+  paintPixel(event);
+  mouseIsDown = false;
+});
 
 function clearBoard() {
   const pixelArray = Array.from(document.querySelectorAll('.pixel'));
