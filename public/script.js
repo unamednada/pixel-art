@@ -17,10 +17,11 @@ function setBGColors() {
   let newColors;
   colorArray[0].style.backgroundColor = 'black';
   colorArray[0].classList.add('selected');
-  for (let i = 1; i < colorArray.length; i += 1) {
+  for (let i = 1; i < colorArray.length - 1; i += 1) {
     newColors = createColorArray();
     colorArray[i].style.backgroundColor = `rgb(${newColors[0]}, ${newColors[1]}, ${newColors[2]})`;
   }
+  colorArray[colorArray.length - 1].style.backgroundColor = 'white';
 }
 
 window.onload = setBGColors;
