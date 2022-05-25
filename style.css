@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.pixel {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
