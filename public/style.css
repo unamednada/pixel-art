@@ -61,9 +61,14 @@ body {
   width: 70px;
 }
 
-#settings img:hover {
+#generate-board img:hover {
   cursor: pointer;
   animation: big-small 1s infinite;
+}
+
+#clear-board img:hover {
+  cursor: pointer;
+  animation: shake 1s infinite;
 }
 
 .pixel {
@@ -85,5 +90,36 @@ body {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes shake {
+
+  0% {
+    transform: translate(5px);
+  }
+
+  25% {
+    transform: translate(10px);
+  }
+
+  40% {
+    transform: translate(5px);
+  }
+
+  50% {
+    transform: translate(0);
+  }
+
+  60% {
+    transform: translate(-5px);
+  }
+
+  75% {
+    transform: translate(-10px);
+  }
+
+  100% {
+    transform: translate(-5px);
   }
 }
