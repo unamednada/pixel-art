@@ -66,6 +66,11 @@ function paintPixel(event) {
 table.addEventListener('mousedown', () => { mouseIsDown = true; });
 table.addEventListener('mouseup', () => { mouseIsDown = false; });
 table.addEventListener('mouseover', paintPixel);
+table.addEventListener('click', (event) => {
+  mouseIsDown = true;
+  paintPixel(event);
+  mouseIsDown = false;
+});
 
 function clearBoard() {
   const pixelArray = Array.from(document.querySelectorAll('.pixel'));
