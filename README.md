@@ -1,6 +1,6 @@
 ## Pixel Art
 
-# [Deploy](https://pixel-art.unamednada.repl.co/)
+### [Clique aqui para ver o deploy no repl.it](https://pixel-art.unamednada.repl.co/)
 
 Projeto realizado em HTML, CSS e JS.
 
