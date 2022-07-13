@@ -10,9 +10,9 @@ Projeto incentivado pela Trybe, no módulo de fundamentos do curso de Desenvolvi
 
 ## Habilidades
 
-- Manipular o DOM
+  - Manipular o DOM
 
-- Manipular o Javascript
+  - Manipular o Javascript
 
 ### 🗒 PARA RODAR O PIXEL ART LOCALMENTE:
 
